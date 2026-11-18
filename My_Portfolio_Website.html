@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anannya Patil | Java Backend Developer</title>
+<meta name="description" content="Anannya Patil is a computer engineering student at VIT Pune building Java and Spring Boot backends, REST APIs and secure database-backed applications. Former Java Developer Intern at Infosys Springboard.">
+<meta property="og:title" content="Anannya Patil | Java Backend Developer">
+<meta property="og:description" content="Java, Spring Boot, REST APIs and MySQL. Computer engineering student at VIT Pune.">
+<meta name="theme-color" content="#0b1426">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1426;--surface:#111d33;--line:#25344f;--text:#f4f7fb;--muted:#a9b4c6;--accent:#6c9bf0;--accent-d:#4a78d0;--max:1060px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--muted);font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{color:var(--text);font-weight:600;line-height:1.2}
+h2{font-size:1.75rem;margin-bottom:32px;letter-spacing:-.01em}
+h3{font-size:1.2rem}
+section{padding:88px 0;border-top:1px solid var(--line)}
+p+p{margin-top:14px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:12px;background:var(--text);color:var(--bg);padding:8px 14px;z-index:20;border-radius:6px}
+/* nav */
+header{position:sticky;top:0;z-index:10;background:rgba(11,20,38,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{color:var(--text);font-weight:600;text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none;padding:0;font-size:.95rem}
+nav ul a{text-decoration:none;padding:6px 0}nav ul a:hover{color:var(--text)}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:500;text-decoration:none;border:1px solid var(--line);color:var(--text);transition:background .2s,border-color .2s}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#08111f}
+.btn.primary:hover{background:#85adf5}
+.btn.sm{padding:7px 14px;font-size:.92rem}
+/* hero */
+.hero{padding:84px 0 96px;border:0}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.3rem);letter-spacing:-.02em;margin-bottom:22px}
+.hero .lead{font-size:1.15rem;max-width:34em}
+.facts{color:var(--muted);font-size:.95rem;margin:22px 0 30px;padding-left:14px;border-left:2px solid var(--accent)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.links{display:flex;gap:22px;font-size:.95rem}
+.links a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}.links a:hover{color:var(--text);text-decoration-color:var(--accent)}
+.stack{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px}
+.stack h2{font-size:1rem;margin-bottom:4px}
+.stack small{display:block;margin-bottom:20px;font-size:.85rem}
+.stack ol{list-style:none;padding:0;position:relative}
+.stack ol::before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:1px;background:var(--line)}
+.stack li{position:relative;padding:7px 0 7px 30px;color:var(--text);font-size:.98rem}
+.stack li::before{content:"";position:absolute;left:1px;top:15px;width:13px;height:13px;border-radius:50%;background:var(--surface);border:2px solid var(--accent-d)}
+.stack li span{display:block;color:var(--muted);font-size:.85rem}
+.stack li.core::before{background:var(--accent)}
+/* about / generic */
+.two{display:grid;grid-template-columns:1fr 1.6fr;gap:56px}
+.two h2{margin:0}
+.meta{margin-top:18px;font-size:.95rem}.meta b{color:var(--text);font-weight:500}
+/* experience */
+.job{display:grid;grid-template-columns:200px 1fr;gap:32px}
+.job time{font-size:.95rem}
+.job h3{margin-bottom:2px}.job .org{color:var(--accent);margin-bottom:14px}
+ul.tight{padding-left:20px}ul.tight li{margin-bottom:8px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;list-style:none;padding:0}
+.tags li{font-size:.85rem;padding:3px 11px;border:1px solid var(--line);border-radius:99px;color:var(--muted)}
+/* projects */
+.proj{border:1px solid var(--line);border-radius:12px;padding:30px;background:var(--surface)}
+.proj+.proj{margin-top:20px}
+.proj.lead-p{border-color:#3a5688;padding:36px}
+.proj header{all:unset;display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:12px;flex-wrap:wrap}
+.proj .kind{font-size:.9rem;margin-top:2px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:20px}
+.grid2 h4{color:var(--text);font-size:.95rem;font-weight:500;margin-bottom:6px}
+.grid2 p,.grid2 li{font-size:.97rem}
+.smallgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.smallgrid .proj{margin:0;display:flex;flex-direction:column}
+.smallgrid .proj p{font-size:.97rem;flex:1}
+.smallgrid .btn{align-self:flex-start;margin-top:18px}
+.note{font-size:.88rem;margin-top:14px}
+/* skills */
+.coreskills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.coreskills span{color:var(--text);font-weight:500;padding:9px 18px;background:var(--surface);border:1px solid #3a5688;border-radius:8px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:0 36px}
+.skills div{border-top:1px solid var(--line);padding:18px 0 22px}
+.skills h3{font-size:1rem;margin-bottom:6px;font-weight:500}
+.skills p{font-size:.95rem;margin:0}
+/* achievements */
+.ach{display:grid;grid-template-columns:1fr 1fr;gap:20px 56px}
+.ach h3{font-size:1.05rem;margin-bottom:4px}.ach p{font-size:.97rem}
+.ach div{border-top:1px solid var(--line);padding-top:16px}
+/* contact */
+.contact{text-align:left}
+.contact .big{font-size:clamp(1.4rem,3vw,2rem);color:var(--text);font-weight:600;text-decoration:none;border-bottom:2px solid var(--accent)}
+.contact .cta{margin-top:30px}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:.88rem}
+/* motion: one load-in only */
+@media (prefers-reduced-motion:no-preference){.hero .wrap>*{animation:in .7s ease both}.hero .wrap>*:nth-child(2){animation-delay:.12s}}
+@keyframes in{from{opacity:0;transform:translateY(10px)}}
+@media(max-width:860px){
+ .hero .wrap,.two,.job,.grid2,.smallgrid,.ach{grid-template-columns:1fr;gap:28px}
+ .skills{grid-template-columns:1fr}
+ nav ul{display:none}
+ section{padding:64px 0}.hero{padding:48px 0 64px}
+ .proj,.proj.lead-p{padding:24px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><nav aria-label="Primary">
+ <a class="brand" href="#top">Anannya Patil</a>
+ <ul><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#achievements">Achievements</a></li><li><a href="#contact">Contact</a></li></ul>
+ <a class="btn sm" href="Anannya_Patil_Resume.pdf" download>Download resume</a>
+</nav></div></header>
+
+<main id="main">
+<section class="hero" id="top"><div class="wrap">
+ <div>
+  <h1>Software engineering student building secure Java backends.</h1>
+  <p class="lead">I build REST APIs and database-backed applications with Java, Spring Boot and MySQL, including JWT authentication and role-based access control. I interned as a Java Developer at Infosys Springboard, and I also work across Python, machine learning, networking and security.</p>
+  <p class="facts">B.Tech Computer Engineering, Vishwakarma Institute of Technology, Pune. Class of 2028. CGPA 9.18.</p>
+  <div class="cta"><a class="btn primary" href="#projects">View projects</a><a class="btn" href="Anannya_Patil_Resume.pdf" download>Download resume</a></div>
+  <div class="links"><a href="https://github.com/anannya-patil" rel="noopener">GitHub</a><a href="https://linkedin.com/in/anannya-patil-550065318" rel="noopener">LinkedIn</a><a href="mailto:anannya.patil24@vit.edu">Email</a></div>
+ </div>
+ <aside class="stack" aria-label="Backend architecture of the Disaster Management system">
+  <h2>How a request moves through my main project</h2>
+  <small>Layered architecture of the Disaster Management &amp; Alert System</small>
+  <ol>
+   <li>Angular client<span>Citizens, responders and admins</span></li>
+   <li class="core">Spring Security + JWT<span>Authentication and role-based access</span></li>
+   <li class="core">Controller<span>REST endpoints</span></li>
+   <li class="core">Service<span>Business logic</span></li>
+   <li class="core">Repository and Entity<span>Data access and mapping</span></li>
+   <li>MySQL</li>
+  </ol>
+ </aside>
+</div></section>
+
+<section id="about"><div class="wrap two">
+ <h2>About</h2>
+ <div>
+  <p>I'm a computer engineering student focused on backend development. I like the parts of a system users never see: how an API is shaped, how data is modelled, and who is allowed to do what.</p>
+  <p>My strongest work is in Java and Spring Boot. Alongside that, I've explored machine learning, network programming, ethical hacking and IBM Z mainframe tools, which give me a wider view of how software runs and where it breaks.</p>
+  <p class="meta"><b>Based in</b> Pune, India. <b>Languages</b> English, Hindi, Marathi.</p>
+ </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+ <h2>Experience</h2>
+ <div class="job">
+  <time>Feb 5 – Apr 5, 2026<br>Remote program, 60 days</time>
+  <div>
+   <h3>Java Developer Intern</h3>
+   <p class="org">Infosys Springboard</p>
+   <ul class="tight">
+    <li>Worked in a team of three on a Disaster Management and Alert System, a full-stack emergency response platform.</li>
+    <li>Developed backend modules in Java and Spring Boot, exposing REST APIs with MySQL integration.</li>
+    <li>Implemented role-based authentication and authorization with Spring Security and JWT.</li>
+    <li>Followed a milestone-based workflow using Git and GitHub for version control and coordination.</li>
+   </ul>
+   <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>JWT</li><li>REST APIs</li><li>MySQL</li><li>Angular</li></ul>
+  </div>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <h2>Projects</h2>
+
+ <article class="proj lead-p">
+  <header><div><h3>Disaster Management &amp; Emergency Response System</h3><p class="kind">Internship project, team of three</p></div>
+  <a class="btn sm" href="https://github.com/anannya-patil/DisasterManagement_AlertSystem" rel="noopener">View on GitHub</a></header>
+  <p>A full-stack platform for monitoring disaster events, broadcasting alerts and coordinating emergency response.</p>
+  <div class="grid2">
+   <div><h4>Problem</h4><p>Emergency alerts, citizen reports and responder actions need to move through one system, with the right people seeing the right data.</p>
+    <h4 style="margin-top:18px">Stack</h4><p>Java, Spring Boot, Spring Security, JWT, MySQL, Angular, REST APIs</p></div>
+   <div><h4>What I worked on</h4>
+    <ul class="tight"><li>REST APIs for alert broadcasting, emergency reporting and responder coordination</li><li>JWT authentication and role-based authorization with Spring Security</li><li>Responder acknowledgment tracking and automated response-time logging</li></ul></div>
+  </div>
+  <p class="note"><b style="color:var(--text);font-weight:500">Technical decisions.</b> Layered backend architecture (Entity, Repository, Service, Controller) to keep data access, business rules and API concerns separate.</p>
+ </article>
+
+ <div class="smallgrid">
+  <article class="proj">
+   <h3>Aarogya Pothi</h3><p class="kind">Personal health record manager</p>
+   <p style="margin-top:12px">A patient-centric system where patients, doctors and researchers access medical records through consent-based permissions. Records include symptom logs, reports, allergies and vaccination history.</p>
+   <p class="note">Python, Flask, MySQL, Firebase Authentication, Bootstrap. Role-based access control, consent-driven sharing and anonymized research access.</p>
+   <a class="btn sm" href="https://github.com/Aniket-317/Aarogya_Pothi" rel="noopener">View on GitHub</a>
+  </article>
+  <article class="proj">
+   <h3>Machine learning: pain severity classification</h3><p class="kind">Academic experiment</p>
+   <p style="margin-top:12px">Classifying menstrual pain severity from physiological data, using EEG datasets at different sampling frequencies and Random Forest models.</p>
+   <p class="note">Row-wise splits gave misleadingly optimistic results. Re-evaluating with subject-wise validation showed that generalizing across people is much harder, which led me to investigate data leakage.</p>
+  </article>
+  <article class="proj">
+   <h3>Lab Management System</h3><p class="kind">Admin platform</p>
+   <p style="margin-top:12px">Manages laboratory equipment across multiple labs: asset tracking, repair history, status monitoring, maintenance alerts, and search and filtering.</p>
+   <p class="note">Python, Flask, MySQL, Bootstrap.</p>
+   <a class="btn sm" href="https://github.com/anannya-patil/Lab-Management-System" rel="noopener">View on GitHub</a>
+  </article>
+  <article class="proj">
+   <h3>FabScorer</h3><p class="kind">Textile recyclability platform</p>
+   <p style="margin-top:12px">Scores the recyclability of fabric blends from fiber composition and matches users with nearby recyclers. Includes REST APIs for batch processing and pickup requests.</p>
+   <p class="note">Python, Flask, JavaScript, JSON-based storage.</p>
+   <a class="btn sm" href="https://github.com/IshanPats/Fabscorer" rel="noopener">View on GitHub</a>
+  </article>
+ </div>
+ <p class="note">Also: MainGuard, a team mainframe project where I handled integration and testing; a Python crowd-simulation project; and Java TCP/UDP socket programs including Sliding Window Protocol.</p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <h2>Technical skills</h2>
+ <div class="coreskills" aria-label="Core skills"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>SQL and MySQL</span><span>Spring Security and JWT</span></div>
+ <div class="skills">
+  <div><h3>Programming languages</h3><p>Java, Python, SQL, C, C++</p></div>
+  <div><h3>Backend development</h3><p>Spring Boot, Spring Security, JWT, role-based access control, layered architecture, Flask, object-oriented programming</p></div>
+  <div><h3>APIs and integration</h3><p>REST API design and integration, authentication and authorization, Angular frontend integration</p></div>
+  <div><h3>Databases</h3><p>MySQL, relational database design, Firebase</p></div>
+  <div><h3>AI/ML and data analysis</h3><p>Random Forest classification, subject-wise validation, similarity metrics (Jaccard, Levenshtein, Jaro-Winkler)</p></div>
+  <div><h3>Tools and platforms</h3><p>Git, GitHub, Docker, Linux, Wireshark, VS Code</p></div>
+  <div><h3>Other technical areas</h3><p>Data structures and algorithms, TCP/UDP socket programming, web security labs (OWASP Juice Shop)</p></div>
+  <div><h3>Frontend</h3><p>HTML, CSS, JavaScript, Bootstrap, Angular (used in projects)</p></div>
+  <div><h3>Exposure</h3><p>IBM Z mainframe fundamentals: COBOL, JCL, REXX, ISPF, Zowe CLI. Studied, not my focus.</p></div>
+ </div>
+</div></section>
+
+<section id="achievements"><div class="wrap">
+ <h2>Research and achievements</h2>
+ <div class="ach">
+  <div><h3>Research publication</h3><p>Co-author of "A Web Application to Find and View Environment-Friendly Textiles", Mukt Shabd Journal, Volume XIV, Issue V, May 2025.</p></div>
+  <div><h3>Internship</h3><p>Java Developer Intern, Infosys Springboard, February to April 2026.</p></div>
+  <div><h3>Certifications</h3><p>Introduction to Software Engineering, IBM on Coursera (April 2026). Front End Web Development, Infosys Springboard (April 2025). C Programming, Infosys Springboard (November 2024). Basics of Python, Infosys Springboard (October 2024).</p></div>
+  <div><h3>Academics</h3><p>B.Tech Computer Engineering at VIT Pune, CGPA 9.18. ICSE 97.33%.</p></div>
+ </div>
+</div></section>
+
+<section id="exploring"><div class="wrap two">
+ <h2>Currently exploring</h2>
+ <div><p>I'm deepening my backend engineering knowledge and getting into open-source development.</p></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+ <h2>Contact</h2>
+ <p style="margin-bottom:20px">I'm looking for internships and backend roles, and happy to talk about open-source work.</p>
+ <a class="big" href="mailto:anannya.patil24@vit.edu">anannya.patil24@vit.edu</a>
+ <div class="cta"><a class="btn primary" href="Anannya_Patil_Resume.pdf" download>Download resume</a><a class="btn" href="https://linkedin.com/in/anannya-patil-550065318" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/anannya-patil" rel="noopener">GitHub</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">Anannya Yogesh Patil. Pune, India.</div></footer>
+</body>
+</html>
